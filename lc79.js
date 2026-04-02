@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import fetch from "node-fetch";
 
 // --- CẤU HÌNH ---
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const API_URL = "https://wtxmd52.tele68.com/v1/txmd5/sessions";
 
 // --- GLOBAL STATE ---
