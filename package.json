@@ -1,0 +1,14 @@
+{
+  "name": "txmd5-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "lc79.js",
+  "scripts": {
+    "start": "node lc79.js"
+  },
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "@fastify/cors": "^8.5.0",
+    "node-fetch": "^3.3.2"
+  }
+}
