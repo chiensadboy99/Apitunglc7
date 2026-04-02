@@ -1357,3 +1357,19 @@ Stack: ${err.stack}
 };
 
 start();
+const app = fastify();
+
+app.register(cors, { origin: true });
+
+app.get("/", async (req, reply) => {
+    return { status: "ok", message: "Bot đang chạy" };
+});
+
+app.listen({ port: PORT, host: "0.0.0.0" })
+    .then(() => {
+        console.log("Server running on port " + PORT);
+    })
+    .catch(err => {
+        console.error(err);
+        process.exit(1);
+    });
